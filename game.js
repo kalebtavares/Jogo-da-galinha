@@ -87,7 +87,7 @@ function update() {
   pipes.forEach((pipe) => {
     pipe.x -= pipeSpeed; // Usa velocidade variável
     if (pipe.x + 50 < bird.x && !pipe.scored) {
-      score += 5;
+      score += 10;
       pipe.scored = true;
       // A cada 100 pontos, aumenta dificuldade e ativa fogos
       if (score % 100 === 0) {
